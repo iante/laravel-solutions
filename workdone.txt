@@ -1,0 +1,13 @@
+1.) Creation of a user table migration and model (User.php)
+2.) Creating a User table containing details migration and models (UserDetails.php)
+3.) Creating a Wallet table migration and models (Wallet.php) 
+4.) Creating endpoint for registration using jwt. Controller holding the 
+    logic is registerCustomController.php. Contains logic for login a user, and getting all UserDetails
+5.) Creating factories userDetailsFactory, WalletFactory to autofill values in database
+To run \App\Models\User::factory()->count(10)->create();
+       \App\Models\UserDetails::factory()->count(10)->create();
+        \App\Models\Wallet::factory()->count(10)->create();
+        
+6.) Creating Logic for transferring money to another user wallet.
+ The Logic is contained in WalletTransfer Controller
+    
